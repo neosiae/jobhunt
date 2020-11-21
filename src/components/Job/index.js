@@ -4,7 +4,7 @@ export default function Job({ job }) {
   return (
     <S.Container isFeatured={job.featured}>
       <S.FlexCenter>
-        <S.ImageWrapper style={{ position: 'relative' }}>
+        <S.ImageWrapper>
           <S.Logo
             alt={job.company}
             src={`${process.env.PUBLIC_URL}/${job.logo}`}
