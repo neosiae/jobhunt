@@ -21,9 +21,10 @@ export const Clear = styled.span`
   padding-right: 1rem;
   font-size: 0.8rem;
   font-weight: 700;
-  color: hsl(180, 29%, 50%);
+  color: hsl(180, 8%, 52%);
   &:hover {
     text-decoration: underline;
+    color: hsl(180, 29%, 50%);
     cursor: pointer;
   }
 `
