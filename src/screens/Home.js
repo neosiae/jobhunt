@@ -3,6 +3,8 @@ import React from 'react'
 import Header from '../components/Header'
 import Container from '../components/Container'
 import Jobs from '../components/Jobs'
+import Filters from '../components/Filters'
+import { QueriesProvider } from '../contexts/queries'
 
 export default function Home() {
   const [data, setData] = React.useState(null)
@@ -19,10 +21,13 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
-      <Container>
-        <Jobs jobs={data} />
-      </Container>
+      <QueriesProvider>
+        <Header />
+        <Container>
+          <Filters />
+          <Jobs jobs={data} />
+        </Container>
+      </QueriesProvider>
     </div>
   )
 }

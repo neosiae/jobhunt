@@ -98,3 +98,11 @@ export const FlexCenter = styled.div`
     align-items: center;
   }
 `
+
+export const FlexCenterFullWidth = styled.div`
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+`

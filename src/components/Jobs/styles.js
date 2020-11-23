@@ -1,11 +1,24 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Container = styled.div`
-  margin-top: 3.5rem;
+export const Container = styled.main`
+  ${(props) =>
+    props.filtersVisible
+      ? css`
+          margin-top: 1.5rem;
+        `
+      : css`
+          margin-top: 3.5rem;
+        `}
   padding: 0 1.5rem;
   @media (min-width: 992px) {
-    margin-top: 5rem;
-    margin-bottom: 8rem;
+    ${(props) =>
+      props.filtersVisible
+        ? css`
+            margin-top: 0.5rem;
+          `
+        : css`
+            margin-top: 3rem;
+          `}
   }
   @media (min-width: 1440px) {
     padding: 0 5.5rem;
