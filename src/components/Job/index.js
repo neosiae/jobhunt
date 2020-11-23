@@ -4,12 +4,12 @@ export default function Job({ job }) {
   return (
     <S.Container isFeatured={job.featured}>
       <S.FlexCenter>
-        <S.ImageWrapper>
+        <S.LogoWrapper>
           <S.Logo
             alt={job.company}
             src={`${process.env.PUBLIC_URL}/${job.logo}`}
           />
-        </S.ImageWrapper>
+        </S.LogoWrapper>
         <S.InfoWrapper>
           <S.CompanyWrapper>
             <S.Company>{job.company}</S.Company>

@@ -15,7 +15,7 @@ export const Container = styled.div`
   }
 `
 
-export const ImageWrapper = styled.div`
+export const LogoWrapper = styled.div`
   position: relative;
 `
 
